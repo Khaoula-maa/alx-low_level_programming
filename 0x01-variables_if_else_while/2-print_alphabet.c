@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
  * main - Entry point
@@ -8,14 +10,11 @@
 
 int main(void)
 {
-	char alp[26] = "abcdefghijklmnopqrstuvwxyz";
-	int i;
+	char low;
 
-	for (i = 0; i < 26; i++)
-	{	
-		putchar(alp[i]);
-	}
-	putchar('\n');
+	for (low = 'a'; low <= 'z'; low++)
+		putchar(low);
+		putchar('\n');
 
 	return (0);
 }
